@@ -4,6 +4,7 @@ var botbuilder_azure = require("botbuilder-azure");
 var path = require('path');
 
 const rate = require('./usd_brl_rate');
+const quiz = require('./quiz');
 
 var useEmulator = (process.env.NODE_ENV == 'development');
 
@@ -35,6 +36,8 @@ bot.dialog('/', function (session) {
     rate.get_rate(function(value){
       session.send(value);
     });
+  } else if (msg.includes('questionario')) {
+    session.send(quiz.get_quiz());
   } else {
     session.send('You said ' + session.message.text);
   }
