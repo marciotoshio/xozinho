@@ -1,0 +1,15 @@
+{
+    "name": "XOzinho",
+    "description": "",
+    "secretKey": "",
+    "services": [
+        {
+            "appId": "",
+            "id": "ae5556d0-a72f-11e8-be5b-b364f3ce5e99",
+            "type": "endpoint",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "name": "http://localhost:3978/api/messages"
+        }
+    ]
+}

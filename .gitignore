@@ -1,0 +1,5 @@
+**/*/node_modules/
+**/*/.funcpack/
+typings/
+node_modules/
+*.js.map
