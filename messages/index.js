@@ -32,6 +32,7 @@ if (!useEmulator) {
 
 bot.dialog('/', function (session) {
   var msg = session.message.text;
+  // Add a new condition to add functionality to the bot.
   if(msg.includes('show rate')) {
     rate.get_rate(function(value){
       session.send(value);
@@ -39,7 +40,7 @@ bot.dialog('/', function (session) {
   } else if (msg.includes('questionario')) {
     session.send(quiz.get_quiz());
   } else {
-    session.send('You said ' + session.message.text);
+    // Don't know what to do
   }
 });
 

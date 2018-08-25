@@ -5,11 +5,11 @@
     "services": [
         {
             "appId": "",
-            "id": "ae5556d0-a72f-11e8-be5b-b364f3ce5e99",
+            "id": "614530f0-a873-11e8-aaeb-cf8d745c1da2",
             "type": "endpoint",
             "appPassword": "",
             "endpoint": "http://localhost:3978/api/messages",
-            "name": "http://localhost:3978/api/messages"
+            "name": "XOzinho"
         }
     ]
 }
