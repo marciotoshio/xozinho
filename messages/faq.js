@@ -3,4 +3,3 @@ module.exports = {
       return 'https://goo.gl/3JNq1L';
    }
 }
-
