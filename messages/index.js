@@ -6,6 +6,7 @@ var path = require('path');
 const rate = require('./usd_brl_rate');
 const quiz = require('./quiz');
 const faq = require('./faq');
+const boulos = require('./boulos.js');
 
 var useEmulator = (process.env.NODE_ENV == 'development');
 
@@ -42,6 +43,8 @@ bot.dialog('/', function (session) {
     session.send(quiz.get_quiz());
   } else if (msg.includes('faq')) {
     session.send(faq.get_faq());
+  } else if (toLowerCase(msg).includes('vai boulos')) {
+	session.send(boulos.vaiBoulos());
   } else {
     // Don't know what to do
   }
