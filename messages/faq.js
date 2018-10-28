@@ -1,5 +1,5 @@
 module.exports = {
    get_faq: function() {
-      return 'https://goo.gl/3JNq1L';
+      return 'https://bit.ly/2AuB39i';
    }
 }
