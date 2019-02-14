@@ -2,7 +2,7 @@ const https = require('https');
 
 module.exports = {
    get_rate: function(callback) {
-      https.get('https://free.currencyconverterapi.com/api/v5/convert?q=USD_BRL&compact=y', (resp) => {
+      https.get('https://free.currencyconverterapi.com/api/v5/convert?q=USD_BRL&compact=y&apiKey=' + process.env['CurrencyConverterApiKey'], (resp) => {
         let data = '';
 
         // A chunk of data has been recieved.
